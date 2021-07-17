@@ -1,9 +1,30 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.ts247MathFormula{
+  width: 100%;
+
+}
+.ts247MathFormula ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  padding-left: 0;
+  column-gap: 12px;
+  row-gap: 12px;
+  box-sizing: border-box;
+}
+.ts247MathFormula ul li{
+  list-style:none;
+  cursor: pointer;
+  border: 1px solid #e1e1e1;
+  height: 40px;
+}
+.ts247MathFormula ul li img{
+  width: 20px;
+  padding:12px 9px
+}
+@media all and (max-width:500px) {
+  .ts247MathFormula ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  }
 }

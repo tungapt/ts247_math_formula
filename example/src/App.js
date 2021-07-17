@@ -1,10 +1,18 @@
 import React from 'react'
 
-import { ExampleComponent } from 'ts247_math_formula'
+import {Ts247MathFormula } from 'ts247_math_formula'
 import 'ts247_math_formula/dist/index.css'
 
+
+const getCode = (code) => {
+  console.log(code);
+}
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return(
+    <>
+      <Ts247MathFormula handleGetCode={(code) => getCode(code)} />
+    </>
+  ) 
 }
 
 export default App
