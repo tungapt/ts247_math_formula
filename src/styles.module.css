@@ -4,7 +4,7 @@
   width: 100%;
 
 }
-.ts247MathFormula ul{
+.ts247MathFormula .listMathJax{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
   padding-left: 0;
@@ -26,6 +26,12 @@
   min-height: 22px;
   background: rgb(65, 138, 255);
   color: #fff;
+}
+.ts247MathFormula .inputMathJax{
+  width: 100%;
+  min-height: 60px;
+  resize: vertical;
+  box-sizing: border-box;
 }
 @media all and (max-width:500px) {
   .ts247MathFormula ul{
