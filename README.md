@@ -13,16 +13,23 @@ npm install --save ts247_math_formula
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'ts247_math_formula'
+import {Ts247MathFormula } from 'ts247_math_formula'
 import 'ts247_math_formula/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
+const App = () => {
+  const getCode = (code) => {
+    console.log(code);
   }
+  return(
+    <>
+      <Ts247MathFormula getCode={(code) => getCode(code)}/>
+    </>
+  ) 
 }
+
+export default App
 ```
 
 ## License

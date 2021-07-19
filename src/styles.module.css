@@ -22,6 +22,11 @@
   width: 20px;
   padding:12px 9px
 }
+.ts247MathFormula .previewMathJax{
+  min-height: 22px;
+  background: rgb(65, 138, 255);
+  color: #fff;
+}
 @media all and (max-width:500px) {
   .ts247MathFormula ul{
     display: grid;
